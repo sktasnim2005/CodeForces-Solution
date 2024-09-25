@@ -1,0 +1,13 @@
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+    val t = scanner.nextInt()
+    repeat(t) {
+        val x = scanner.nextInt()
+        val y = scanner.nextInt()
+        val p = minOf(x, y)
+        val q = maxOf(x, y)
+        println("$p $q")
+    }
+}
