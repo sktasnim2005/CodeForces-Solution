@@ -23,3 +23,27 @@ int main() {
 
     return 0;
 }
+
+
+......................
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int t;
+	cin >> t;
+	while(t--){
+		int n, r;
+		cin >> n >> r;
+		long long ans = 0, s = 0;
+		for(int i = 0; i < n; i++){
+			long long a;
+			cin >> a;
+			ans = max(ans, a);
+			s += a;
+		}
+		s = (s + r - 1)/r;
+		ans = max(ans, s);
+		cout << ans << endl;
+	}
+}    
