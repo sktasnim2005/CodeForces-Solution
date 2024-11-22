@@ -3,15 +3,15 @@ using namespace std;
 
 void solve()
 {
-    string str;
-    cin >> str;
+    string s;
+    cin >> s;
 
-    if (str[0] == str[str.size() - 1]){
-        cout << str << endl;
+    if (s[0] == s[s.size() - 1]){
+        cout << s << endl;
     }
     else{
-        str[0] = str[str.size()-1];
-        cout << str << endl;
+        s[0] = s[s.size()-1];
+        cout << s << endl;
     }
 }
 
