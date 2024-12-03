@@ -22,12 +22,7 @@ int main() {
             }
         }
 
-        if (ans) {
-            cout << "YES" << endl;
-        }
-        else {
-            cout << "NO" << endl;
-        }
+        cout<<(ans ? "YES" : "NO")<<endl;
     }
 
     return 0;
