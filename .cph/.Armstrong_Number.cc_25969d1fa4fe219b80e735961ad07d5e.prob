@@ -1,0 +1,1 @@
+{"name":"Local: Armstrong_Number","url":"/home/tasnim/CodeForces-Solution/Armstrong_Number.cc","tests":[{"id":1748885878893,"input":"153","output":"YES"},{"id":1748885897852,"input":"36","output":"NO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tasnim/CodeForces-Solution/Armstrong_Number.cc","group":"local","local":true}
