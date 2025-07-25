@@ -3,30 +3,31 @@ using namespace std;
 #define ll long long 
 #define ii int
 #define ss string
+#define dd double
 
-void solve() {
-    //ii n;
-    ss s;
+void solve() { 
+    ss s;  
     cin >> s;
-    ii l = s.size();
-    bool can = true;
 
-    //for(ii i=0;i<l/2;i++){
-    //    if(s[i]==')'){
-    //        can = false;
-    //        break;
-    //    }
-    //}     
+    ii bracket =0;
 
-    //cout<< (can ? "NO" : "YES") << endl;
-    cout<< ( l%2 == 1 ? "YES" : "NO") << endl;
+    for(ll i=0;i<s.size()-1 ;i++){
+        if(s[i]=='(') bracket++;
+        else bracket--;
 
+        if(bracket==0){
+            cout << "YES" << endl;
+            return;
+        }
+    }
+
+    cout << "NO" << endl;
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    int t;cin >> t;while (t--) 
+    int t; cin >> t; while (t--) 
     solve();
     return 0;
 }

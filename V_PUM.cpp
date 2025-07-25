@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long 
+#define ii int
+#define ss string
+#define dd double
+
+void solve() {   
+    ii n;
+    cin >> n;
+
+    ii x=1;
+
+    for(ii i=0;i<n;i++){
+        for(ii j=0;j<3;j++){
+            cout << x << " ";
+            x++;
+        }
+        cout << "PUM" << endl;
+        x++;
+    }
+        
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    //int t; cin >> t; while (t--)
+    solve();
+    return 0;
+}
