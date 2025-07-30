@@ -6,17 +6,17 @@ using namespace std;
 #define dd double
 
 void solve() {
-    ll n, k;
-    cin >> n >> k;
-
-    cout<< (n + k - 3) / (k - 1) <<endl;
+    ii n, m,k;
+    cin >> n >> m >> k;
+    
+    cout << (n<=m && n<=k ? "Yes" : "No") << endl;
    
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    int t; cin >> t; while (t--) 
+    //int t; cin >> t; while (t--) 
     solve();
     return 0;
 }

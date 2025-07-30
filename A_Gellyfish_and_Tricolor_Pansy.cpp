@@ -5,13 +5,16 @@ using namespace std;
 #define ss string
 #define dd double
 
-void solve() {
-    ll n, k;
-    cin >> n >> k;
 
-    cout<< (n + k - 3) / (k - 1) <<endl;
-   
+void solve() {
+    ll a,b,c,d;
+    cin >> a >> b >> c >> d;
+
+    cout << (min(a,c) >= min(b,d) ? "Gellyfish" : "Flower" ) << endl;
+    
+
 }
+
 
 int main() {
     ios::sync_with_stdio(false);

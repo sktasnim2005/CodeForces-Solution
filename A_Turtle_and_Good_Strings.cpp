@@ -5,13 +5,21 @@ using namespace std;
 #define ss string
 #define dd double
 
-void solve() {
-    ll n, k;
-    cin >> n >> k;
 
-    cout<< (n + k - 3) / (k - 1) <<endl;
-   
+void solve() {
+    ii n;
+    ss s;
+    cin >> n >> s;
+
+    ii l = s.size();
+    
+
+    cout << (s[0]==s[l-1] ? "NO" : "YES") << endl;
+    
+    
+
 }
+
 
 int main() {
     ios::sync_with_stdio(false);

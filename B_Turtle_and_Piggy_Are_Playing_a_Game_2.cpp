@@ -5,13 +5,26 @@ using namespace std;
 #define ss string
 #define dd double
 
-void solve() {
-    ll n, k;
-    cin >> n >> k;
 
-    cout<< (n + k - 3) / (k - 1) <<endl;
-   
+void solve() {
+    ii n;
+    cin >> n;
+
+    vector<ii> a(n);
+    
+    for(ii i=0;i<n;i++){
+        cin >> a[i];
+    }
+
+    sort(a.begin(),a.end());
+
+
+    cout << a[n/2] << endl;
+    
+    
+
 }
+
 
 int main() {
     ios::sync_with_stdio(false);

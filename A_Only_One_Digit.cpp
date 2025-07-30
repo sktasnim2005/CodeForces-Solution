@@ -6,11 +6,17 @@ using namespace std;
 #define dd double
 
 void solve() {
-    ll n, k;
-    cin >> n >> k;
+    
+    ss x;
+    cin >> x;
 
-    cout<< (n + k - 3) / (k - 1) <<endl;
+    char min_dight = '9';
+
+    for(char c : x){
+        min_dight = min(min_dight,c);
+    }
    
+    cout << min_dight << endl;
 }
 
 int main() {

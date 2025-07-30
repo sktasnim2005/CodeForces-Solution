@@ -6,11 +6,24 @@ using namespace std;
 #define dd double
 
 void solve() {
-    ll n, k;
-    cin >> n >> k;
+    
+    ll n;
+    cin >> n;
 
-    cout<< (n + k - 3) / (k - 1) <<endl;
+    vector<ll> a(n);
+
+    for(auto &x : a) cin >> x;
+
+    ll ans =0;
+    for(ii i=0;i+1<n;i++){
+        if(a[i] > a[i+1]){
+            ans = max(ans,a[i]);
+        }
+    }
+
+
    
+    cout << ans << endl;
 }
 
 int main() {
