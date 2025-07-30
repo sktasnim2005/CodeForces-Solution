@@ -5,24 +5,28 @@ using namespace std;
 #define ss string
 #define dd double
 
+void solve() {
+    
+    ll a,b;
+    cin >> a >>b;
 
-void solve() {    
-    ll x,y,z;
-    cin >> x >> y >> z;
+    ll Min = min(a,b);
 
-    ll m = max({x,y,z});
-    ll mi = min({x,y,z});
-
-    cout << mi << " " << m << endl;
+    ll f = 1;
+    for(ll i =2;i<=Min;i++){
+        f*=i;
+    }
 
     
+    cout << f << endl;
 
+    
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    //int t;cin >> t;while (t--) 
+    //int t; cin >> t; while (t--) 
     solve();
     return 0;
 }
