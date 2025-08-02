@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long 
+#define ii int
+#define ss string
+#define dd double
+
+void solve() {
+    
+    ii b,c,h;
+    cin >> b >> c >> h;
+
+    ii  x= c+h;
+
+    ii bur = 1;
+    b--;
+
+    while(b>0 && x>0){
+        b--;
+        x--;
+        bur +=2;
+    }
+
+
+    cout << bur << endl;
+
+    
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int t; cin >> t; while (t--) 
+    solve();
+    return 0;
+}
