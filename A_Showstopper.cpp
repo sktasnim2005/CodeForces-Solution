@@ -7,20 +7,19 @@ using namespace std;
 #define bb bool
 
 void solve() {
-    ii a,b;
-    cin >> a >> b ;
+    ii n;
+    cin >> n ;
 
-    ii maX = max(a,b);
-    ii miN = min(a,b);
+    vector<ii> a(n+n);
 
-    if(maX /2 == miN && miN %2 !=0){
-        cout << "No" << endl;
-    }
-    else if(a%2 ==0 || b%2 == 0){
+    for(auto& x : a) cin >> x;
+    for(auto& x : a) cin >> x;
+
+    sort(a.begin(),a.end());
+   
+
+    if(maX_a == a[n-1] && maX_b == b[n-1]){
         cout << "Yes" << endl;
-    }
-    else if(min(a,b) == 1 ){
-        cout << "No" << endl;
     }
     else{
         cout << "No" << endl;
